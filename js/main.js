@@ -17,3 +17,16 @@ console.log(Ism);
 console.log(Ism);
 
 Agar yuqoridagi 8 ta qatorda o'zgaruvchini o'zgartirishimizga to'g'ri keladigan bo'lsa hammasini o'zgartirmasdan ism o'zgaruvchisiga biriktirilgan o'zgaruvchini o'zgartiribqo'ysak bo'ldi */
+
+
+
+/* O'ZGARUVCHI VA MANTLARNI BIRIKTIRISH
+
+O'zgaruvchi va matnlarni biriktirish uchun matnni qo'shtirnoq ichuga olib + belgisi orqali o'zgaruvchiga biriktiriladi masalan
+
+const Ism = `Faxriddin`;
+const Familya = `Mamadiyev`;
+const Yosh = `29`;
+
+Mening ismim Faxriddin, Familyam Mamadiyev, yoshim 29 da demoqchi bo'sak quyidagicha yo'l tutamiz
+console.log(`Mening ismim ` + Ism + `, Familyam ` + Familya + `, Yoshim ` + Yosh + ` da`); */
