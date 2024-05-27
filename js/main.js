@@ -30,3 +30,23 @@ const Yosh = `29`;
 
 Mening ismim Faxriddin, Familyam Mamadiyev, yoshim 29 da demoqchi bo'sak quyidagicha yo'l tutamiz
 console.log(`Mening ismim ` + Ism + `, Familyam ` + Familya + `, Yoshim ` + Yosh + ` da`); */
+
+
+/* MANT UZUNLIGINI ANIQLASH
+Matn uzunligini aniqlash uchun .length tegidan foydalanamiz.
+Masalan:
+
+console.log(`Faxriddin`.length);
+
+Consolda Faxriddin ismidagi belgilar soni chiqadi. .length tegi probellerni ham sanaydi.
+Masalan
+
+console.log(`Men va Sen`.length);
+
+Berilgan matnda 8 ta xarf bor legin consolda 10 chiqayapdi sababi 2 ta probel ham belgi o'rniga o'tib ketayapdi
+
+const Ism = `Faxriddi`;
+
+console.log(Ism + ` ismida ` + Ism.length + ` ta belgi bor`);
+
+consolda Faxriddi ismida 8 ta belgi bor matni chiqadi */
