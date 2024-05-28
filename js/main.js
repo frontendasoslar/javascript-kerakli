@@ -154,3 +154,23 @@ Foydalanuvchi nomi: Faxriddin
 Foydalanuvchi bali: 75
 
 ko'rinishga keldi */
+
+
+
+/* ELEMENTGA CLASS QO'SHISH, OLIB TASHLASH, QO'SHISH VA OLIN TASHLASH, CLAS BOR YO'QLIGINI TEKSHIRISH
+Bizga username clasli element berilgan bo'lsin
+Bu elementga qo'shimcha klas qo'shish uchun avval bu elementni topib olishimiz kerak
+const elUsername = document.querySelector(`.username`);
+
+Bu elementga oshqa klas masalan light--username klasini qoshish uchun quyidagi amalni majaramiz
+elUsername.classList.add('light--username');
+
+elUsername elementidan light--username klasini olib tashlash uchun esa quyidagi amalni bajaramiz
+elUsername.classList.remove('light--username');
+
+
+elUsername elementiga light--username clasini qo'shish va olib tashlash uchun Quyidagi amalni bajaramiz
+elUsername.classList.toggle('light--username');
+
+elUsername elementida light--username clasi bor yoki yo'qligini tekshirish uchun quyidagi amalni bajaramiz
+elUsername.classList.contains('light--username') */
