@@ -45,8 +45,48 @@ console.log(`Men va Sen`.length);
 
 Berilgan matnda 8 ta xarf bor legin consolda 10 chiqayapdi sababi 2 ta probel ham belgi o'rniga o'tib ketayapdi
 
-const Ism = `Faxriddi`;
+const Ism = `Faxriddin`;
 
 console.log(Ism + ` ismida ` + Ism.length + ` ta belgi bor`);
 
 consolda Faxriddi ismida 8 ta belgi bor matni chiqadi */
+
+
+
+/* TEMPALET LETERAL
+
+Tempalate lateral ya'ni ` ` belgi ichiga matinlarni va o'zgaruvchilarni bitta ` ` belgi ichida birlashtirishimiz mumkun
+Masalan:
+const Ism = `Faxriddin`;
+
+console.log(`Mening ismim ${Ism}. Mening ismimda ${Ism.length} ta belgi bor`);
+consolda Mening ismim Faxriddin. Mening ismimda 9 ta belgi bor matni chiqadi */
+
+
+/* ELEMENTLARNI TANLASH document.querySelector
+Biz htmldagi biror elementni yoki uni clasini document.querySelector tanlovchisi bilan tanlab olishimiz mumkun
+Masalan:
+document.querySelector('body')
+Bu bizga htmlning body qismini topib beradi
+
+document.querySelector('h2')
+Bu bizga h2 tegida yozilgan ma'lumotlarni topib beradi
+
+document.querySelector('.container')
+Bu bizga container clasli elementni topib beradi */
+
+
+
+
+/* HTML elementlariga elementlariga biriktirilgan elementlarni el bilan boshlash sababi
+
+Javascriptda oddiy o'zgaruvchilar va html elementlariga biriktirilgan 'zgaruvchilarni ajratib olishimiz uchun HTML elementlariga biriktirilgan elementlarni el bilan boshlashimiz o'zimizga qulay bo'ladi
+Masalan:
+
+const score = 75;
+score oddiy o'zgaruvchi va bu qanaqadur ballni bildirsin
+
+htmlda esa person-score clasli element bo'lsin. Bu html elementini o'zgaruvchiga biriktirish uchun quyidagicha yo'l turganimiz maqul
+
+const elScore = (`.person-score`);
+Bu usulda person-score clasli elementni elScore o'zgaruvchisi bilan biriktirib oldik va bu usul oddiy o'zgaruvchi score bilan htm elementini ajratib olishimiz uchun qulay usul hisoblanadi */
