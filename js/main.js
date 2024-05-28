@@ -90,3 +90,67 @@ htmlda esa person-score clasli element bo'lsin. Bu html elementini o'zgaruvchiga
 
 const elScore = (`.person-score`);
 Bu usulda person-score clasli elementni elScore o'zgaruvchisi bilan biriktirib oldik va bu usul oddiy o'zgaruvchi score bilan htm elementini ajratib olishimiz uchun qulay usul hisoblanadi */
+
+
+/* BIR NECHTA ELEMENTLARNI TANLASH document.querySelectorAll
+Biz bitta elementni topish uchun document.querySelector tegidan foytalanayotgan edik. Agar bitta nomga yoki bitta klasga to'g'ri keladigan bir nechta elementni tanlamoqchi bo'lsak document.querySelectorAll tegidan foydalanamiz va o'zgaruvchi nomi oldiga el emes els qo'ysak birlik va ko'plikni oson ajrata olamiz
+Masalan html da 4 ta galery-img clasli rasmimiz bo'lsa ularni hammasini tanlab olishimiz uchun quyidagicha yo'l tutamiz
+
+const elsGaleryImg = document.querySelectorAll(`.galery-img`);
+
+Shunda html da galery-img clasli 4 ta elementni hammasini tanlagan bo'lamiz */
+
+
+
+/* BIR NECHTA ELEMENT TANLANGANDA UNING SONINI TOPISH
+Biz
+
+const elsGaleryImg = document.querySelectorAll(`.galery-img`);
+
+orqali birxil clasli bir nechta elemenini topib oldik. Endi unda nechta element borligini qniqlash uchun quyidagicha yo'l tutamiz
+const elsGaleryImg = document.querySelectorAll(`.galery-img`);
+
+console.log(elsGaleryImg.length);
+
+Consolda 4 chiqadi chunki galery-img klasli 4 ta element mavjud */
+
+
+
+
+
+/* Element matnini olish, o'zgartirish. DevToolsda elementga $0 nomi bilan murojaat qilish
+
+Biz biror bir sayt yoki sahifadagi elementni, uni matnini tanlashimiz va o'zgartirishimiz mumkun
+Sahifadagi elementni tanlashimiz uchun uni inspect qilib olamiz ya'ni kodini ochib olamiz. Kerakli elementni tanlaganimizda uni oxirisida ==$0 belgisi chiqadi
+Elamantni tanlaganimizdan keyin consolga o'tamiz va $0 ni bosib tabni bossak bizga tanlagan elementimizni topib beradi
+$0.textContentni yozib tabni bossak element matnini topib beradi
+$0.textContent = 'Birnima'; deb yozib tabni bossak tanlangan elementimizni matnini Birnima matniga o'zgartiriberadi
+
+Endi htmlda quyidagi kod yozilgan bo'lsa
+
+<p>Foydalanuvchi nomi: <strong class="usernamr"></strong></p>
+<p>Foydalanuvchi bali: <strong class="score"></strong></p>
+
+va biz quyidagi o'garuvcgilarni kiritib olgan bo'lsak
+const username = `Faxriddin`;
+const score = 75;
+
+usernamr va score clasli elementlarni quyidagicha topib olaiz
+const elUsername = document.querySelector(".usernamr");
+const elScore = document.querySelector(".score");
+
+Topib olingan elementlarga quyidaggi yo'l bilam matn qo'shib olamiz
+elUsername.textContent = username;
+elScore.textContent = score;
+
+Avval matn
+Foydalanuvchi nomi:
+Foydalanuvchi bali:
+
+bo'lib turgandi unga matn qo'shganimizdan keyin
+
+Foydalanuvchi nomi: Faxriddin
+
+Foydalanuvchi bali: 75
+
+ko'rinishga keldi */
