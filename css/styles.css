@@ -27,10 +27,10 @@ body {
   font-weight: 400;
 }
 
-* :focus {
+/* * :focus {
  outline: 2px dashed #1E90FF;
  outline-offset: 2px;
-}
+} */
 
 
 
@@ -94,6 +94,11 @@ select:-webkit-autofill:focus {
   flex-direction: column;
 }
 
+
+.darc {
+  background-color: #000;
+  color: #fff;
+}
 
 
 @media

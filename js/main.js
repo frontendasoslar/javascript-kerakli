@@ -174,3 +174,28 @@ elUsername.classList.toggle('light--username');
 
 elUsername elementida light--username clasi bor yoki yo'qligini tekshirish uchun quyidagi amalni bajaramiz
 elUsername.classList.contains('light--username') */
+
+
+
+// EVENTLISTINER HODISAGA QULOQ SOLISH
+// Biz biror elementga uning holatini o'zgartirish matnini yoki boshqa holatlarini o'zgartisrish uchun qandaydur hodisa ro'y berganda o'zgarishi uchun eventlistinerdan foydalanamiz
+// Masalan htmlda Event listiner uchun yozildan matn va ikkita button knopkasi berilgan. Bu knopkalar bittasi orqa fonni o'zgartirsin bittasi esa matinni o'zgartirsin
+// Buning uchun biz berilgan elementlarni ularni klaslari orqali quyidagicha topib olamiz
+// const elText = document.querySelector(".text");
+// const elChangeBacground = document.querySelector('.change-bacground');
+// const elchangeText = document.querySelector(".change-text");
+
+
+// Fonni o'zgartirish knopkasi bosilganda orqa fon rangi va matn rangini o'zgarishi uchun css da qo'shimcha darc klasini kiritib olamiz va event listinerni quyidagicha qo'llaymiz
+// elChangeBacground.addEventListener('click', function() {
+//   document.body.classList.toggle('darc');
+// })
+
+// Fonni o'zgartirish knopkasi bosilganda forrangi va matn rangi o'zgaradi
+
+// Matinni o'zini o'zgartirish uchun matinni o'zgartirish knopkasi bosilganda matin o'zgarishi uchun eventlistinerni quyidagicha qo'llaymiz
+// elchangeText.addEventListener('click', function() {
+//   elText.textContent = 'Xayr'
+// })
+
+// Matinni o'zgartirish knopkasi bosilganda Salom matni Xayr matniga o'zgaradi
