@@ -203,3 +203,17 @@ Matinni o'zgartirish knopkasi bosilganda Salom matni Xayr matniga o'zgaradi
 
 Eventlistiner bilan ishlayotganimizda elementni clasini css ga bog'liq bo'lmagan js prefiksli klasdan foydalanishimiz kerak
 Masalan: js-dark, ja-birnima,... kabi klas biriktirib uni faqat eventlistinerda ishlatishimiz kerak*/
+
+
+
+//EVENT HODISA TURLARI
+//java scripda event hodisa turlarni uchun sodda bisol ko'raylik. Htmlda button joylaymiz va unga js-type-button klasini berib olamiz. querySelector orqali button elementini quyidagicha topib olamiz
+const elJsbuttontext = document.querySelector(".js-type-button");
+
+//Topilgan element clik xodisasiga quloq solsin deymiz va funksiya kiritib olamiz
+elJsbuttontext.addEventListener('click', function() {
+  console.dir(elJsbuttontext);
+})
+//console.dir(elJsbuttontext) funksiya consolda elJsbuttontext nomi bilan biriktirilgan button haqidagi hamma ma'lumotlarni chiqarish uchun ishlatiladi
+//Test tugmasini bosganimizda button ma'lumoti chiqadi chiqqan ma'lumotni ochsak button haqida hamma ma'lumotlarni chiqarib beradi
+//Ma'lumotlar ichida on bilan boshlanadigan hamma teglar hodisalar hisoblanadi kod yozayotganimizda bu xodisalarni on qo'shimchaliz yozib ishlatishimiz mumkun
