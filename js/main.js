@@ -268,5 +268,21 @@ if (elChangebutton) {
     }, 3000)
   })
 }
-
 Button knopkasi bosilganda kamida 3 sekund o'tib matin o'zgaradi */
+
+
+
+/* HODISANI BAJARILISHINI TO'XTATIB QO'YISH
+Sahifamizda birorbir linkni ustiga bosganda shu linkni ichiga kirishni yoki boshqa hodisalarni to'ztatib qo'yishimiz mumkun
+Masalan kun.uz saytini linki berilgan bo'lsin. Bu link ustiga bosganimizda linkka kirish to'xtatilsin
+
+linkninf klasi topib olinayapdi
+const elJslink = document.querySelector(".js-link");
+
+
+if (elJslink) {//O'zgaruvchi sug'urtalanayapdi
+  elJslink.addEventListener('click', function(evt) {//O'zgaruvchi click hodisasiga quloq solayapdi funksiyaning event qisqartma evt argumenti
+    evt.preventDefault();//Argumentga hodisani to'xtatish funksiyafi biriktirilayapdi
+    console.log("Sayt ochilmadi");//Linkni ustiga bosganda consolda Sayt ochilmadi degan habar chiqadi buning o'rniga boshqa hodisa ham kiritish mumkun
+  })
+} */
