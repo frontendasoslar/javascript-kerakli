@@ -206,14 +206,67 @@ Masalan: js-dark, ja-birnima,... kabi klas biriktirib uni faqat eventlistinerda 
 
 
 
-//EVENT HODISA TURLARI
-//java scripda event hodisa turlarni uchun sodda bisol ko'raylik. Htmlda button joylaymiz va unga js-type-button klasini berib olamiz. querySelector orqali button elementini quyidagicha topib olamiz
+/* EVENT HODISA TURLARI
+java scripda event hodisa turlarni uchun sodda bisol ko'raylik. Htmlda button joylaymiz va unga js-type-button klasini berib olamiz. querySelector orqali button elementini quyidagicha topib olamiz
 const elJsbuttontext = document.querySelector(".js-type-button");
 
-//Topilgan element clik xodisasiga quloq solsin deymiz va funksiya kiritib olamiz
+Topilgan element clik xodisasiga quloq solsin deymiz va funksiya kiritib olamiz
 elJsbuttontext.addEventListener('click', function() {
   console.dir(elJsbuttontext);
 })
-//console.dir(elJsbuttontext) funksiya consolda elJsbuttontext nomi bilan biriktirilgan button haqidagi hamma ma'lumotlarni chiqarish uchun ishlatiladi
-//Test tugmasini bosganimizda button ma'lumoti chiqadi chiqqan ma'lumotni ochsak button haqida hamma ma'lumotlarni chiqarib beradi
-//Ma'lumotlar ichida on bilan boshlanadigan hamma teglar hodisalar hisoblanadi kod yozayotganimizda bu xodisalarni on qo'shimchaliz yozib ishlatishimiz mumkun
+console.dir(elJsbuttontext) funksiya consolda elJsbuttontext nomi bilan biriktirilgan button haqidagi hamma ma'lumotlarni chiqarish uchun ishlatiladi
+Test tugmasini bosganimizda button ma'lumoti chiqadi chiqqan ma'lumotni ochsak button haqida hamma ma'lumotlarni chiqarib beradi
+Ma'lumotlar ichida on bilan boshlanadigan hamma teglar hodisalar hisoblanadi kod yozayotganimizda bu xodisalarni on qo'shimchaliz yozib ishlatishimiz mumkun */
+
+
+/* Mash quchun. Itputga malumot kiritganda Ismingiz nima degan matindan keyin kiritilayotganda ma'lumotni aftomatik chiqarib brish va ms'lumot uzunligini chiqarish
+Har bir elementning klaslarini topib olayapmiz
+const elInput = document.querySelector(".input-text");
+const elUsername = document.querySelector(".username");
+const elNamelength = document.querySelector(".js-name-length");
+
+elInput.addEventListener('input', function() {
+  elUsername.textContent = elInput.value;
+  elNamelength.textContent = elInput.value.length
+
+  har qandam melumotning valuesi uni ishidagi matinn uchun ishlatiladi
+}) */
+
+
+/* HODISALARGA NISBATAN AMAL BAJARISHNI SUG'URTALASH
+Agar biz js da 1000 qator kod yozgan bo'lsak tahminan 200-qatordagi hodisa kodi hato bo'lsa amal bajarish keyingi kodga o'ta olmaydi. Buni oldini olish uchun hodisani sug'urtalashimiz kerak. Shunda js amal bajarish hatosiz keyingi kodga o'tib ishlayveradi
+Masalan:
+Quyidagi selektrlar berilgan
+const elInput = document.querySelector(".input-text");
+const elUsername = document.querySelector(".username");
+const elNamelength = document.querySelector(".js-name-length");
+
+Bunda biz elInputga evenlistiner biriktirayapmiz. Agar elInput o'zgaruvchi yo'q bo'lsa kodimizda amal bajarish shu qadamda to'xtab qoladi. Buni o'dini olish uchun honisani quyidagicha sug'urtalab qo'yamiz
+
+Agar elInput o'zgaruvchisi bor bo'lsa amallar bajarilishini aks holda keyingi amalga o'tib ketishni bildiradi
+if (elInput) {
+  elInput.addEventListener('input', function() {
+    elUsername.textContent = elInput.value;
+    elNamelength.textContent = elInput.value.length
+  })
+} */
+
+
+/* SETTIMEAUT YORDAMIDA AMALLARNI BIR MUDDAT KEYIN BAJARISH
+Bizga button knopkasi berilgan bo'lsin Assalomaleykum matnini kamida 3 sekunddan keyin Valeykum assalom matniga o'zgartirishni ko'raylik
+Button va matinni claslarini topib olamiz
+
+const elChangebutton = document.querySelector(".js-change-bacground");
+const elText = document.querySelector(".text");
+
+
+Hodisada hatolik bo'lganda keyingi qadamga o'tib ketishi uchun sug'urtalab qp'yamiz. Agar elChangebutton o'zgaruvchi bor bo'lsa hodisa bajariladi aks holda keyingi qadamga o'tib ketadi
+if (elChangebutton) {
+  elChangebutton.addEventListener('click', function () {
+    setTimeout(function () {
+      elText.textContent = 'Valeykum assalom'
+    }, 3000)
+  })
+}
+
+Button knopkasi bosilganda kamida 3 sekund o'tib matin o'zgaradi */
