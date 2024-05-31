@@ -286,3 +286,15 @@ if (elJslink) {//O'zgaruvchi sug'urtalanayapdi
     console.log("Sayt ochilmadi");//Linkni ustiga bosganda consolda Sayt ochilmadi degan habar chiqadi buning o'rniga boshqa hodisa ham kiritish mumkun
   })
 } */
+
+
+/* BIR NECHTA ELEMENTGA EVENTLISTINER BIRIKTIRISH
+Biz eventlistinerni faqat bitta element uchun hodisa bajarilishini ko'rdik. Aga bir xil elementdan bittadan ko'p bo'lsa biz o'rgangan eventlistiner faqat biyttasiga ishlaydi qolganlariga ishlamay qoladi. Hodisa hamma elementga ishlashi uchun querySelector va foreach lardan foydalanishimiz kerak
+Buning uchun elementlarning klasini quyidagicha topib olamiz
+const elsJscale = document.querySelectorAll(".js-scale-button");//ammaelementlarni umumiy klasini topib olish uchun
+
+elsJscale.forEach(function(elJscale) {//Elementlarni har biriga nima dem murojat qilishni nomlab olayapmiz va har bir nomlangan element click hodisasiga quloq solsin deyapmiz
+  elJscale.addEventListener('click', function() {
+    elJscale.classList.toggle('scale-button--bg')//button bosilganda buttonlarni har biriga klas qo'shishni va olib tashlashni buyurayapmiz
+  })
+}) */

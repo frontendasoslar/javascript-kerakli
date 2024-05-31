@@ -101,6 +101,16 @@ select:-webkit-autofill:focus {
 }
 
 
+/* BIR NECHTA ELEMENTGA EVENTLISTINER BIRIKTIRISH */
+.scale-button {
+  margin: 25px;
+  transition: transform 0.4s ease;
+}
+
+.scale-button--bg {
+  transform: scale(1.5);
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
