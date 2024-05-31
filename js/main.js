@@ -298,3 +298,15 @@ elsJscale.forEach(function(elJscale) {//Elementlarni har biriga nima dem murojat
     elJscale.classList.toggle('scale-button--bg')//button bosilganda buttonlarni har biriga klas qo'shishni va olib tashlashni buyurayapmiz
   })
 }) */
+
+
+/* // EVENT DELEGATION, SAHIFAGA KEYINROQ QO'SHILGAN ELEMENTLAR BILAN AMAL BAJARISH
+const elMovieslist = document.querySelector('.list');//Elementlarni urab turuvchi ul korobkani klasini tobib olayapmiz
+
+if (elMovieslist) {//Elementni sug'urtalayapmiz
+  elMovieslist.addEventListener('click', function (evt) {//elementlarni o'rab turuvchi list click hodisasiga quloq solayapdi
+    if (evt.target.matches('.js-like-button')) {//Agar eventni targeti js-like-button clasga to'g'ri kelsa. Agar bu ish qilinmasa listning ixtiyoriy joyiga bossak event ishlab ketadi bizga faqat button bosilganda ishlashi kerak edi
+      evt.target.classList.toggle('button-liked')//eventni targetining klaslistiga button-liked klasini qo'shib qo'yayapmiz
+    }
+  })
+} */

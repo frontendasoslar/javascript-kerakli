@@ -111,6 +111,30 @@ select:-webkit-autofill:focus {
   transform: scale(1.5);
 }
 
+
+
+/* EVENT DELEGATION UCHUN */
+.list {
+  list-style: none;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.like-button {
+  border: 1px solid #999;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-liked {
+ border-color: transparent;
+ background-color: red;
+ color: #fff;
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),

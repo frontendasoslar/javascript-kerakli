@@ -68,13 +68,29 @@
  <button class="scale-button js-scale-button" type="button">kattalash</button>
 </div> -->
 
-<!-- DATASET ATRIBUTI BILAN ISHLASH -->
-<!-- Biz biror bir elementni o'ziga tegishli ma'lumotlarini shu elementning ya'ni htmlga kiritib qo'yishimiz mumkun -->
-<!-- Masalan: -->
+<!-- DATASET ATRIBUTI BILAN ISHLASH
+Biz biror bir elementni o'ziga tegishli ma'lumotlarini shu elementning ya'ni htmlga kiritib qo'yishimiz mumkun
+Masalan:
 <div class="container">
   <div class="movie-kino" data-title="Batmen" data-year="2010" data-price="1000">Kino</div>
 </div>
-<!--Agar elementning dataset orqali kiritilgan malumotlarni javascript orqali foydalanishimiz mumkun va elementning o'ziga ishlatishimiz mumkun. -->
+Agar elementning dataset orqali kiritilgan malumotlarni javascript orqali foydalanishimiz mumkun va elementning o'ziga ishlatishimiz mumkun. -->
+
+
+
+<!-- EVENT DELEGATION, SAHIFAGA KEYINROQ QO'SHILGAN ELEMENTLAR BILAN AMAL BAJARISH
+Masalbizda 4 ta element bor biz event listiner bilan avval sh 4 tasiga amal bajarayapmiz, va bir muncha vaqt o'tgandab keyin boshqa elementni shu elementlar qatoriga qo'shadigan bo'lsakeventlistiner ishlamay qoladi. Bunday holatda keyingi elementda ham event ishlashi uchun EVENT DELEGATIONdan foydalanamiz -->
+<div class="container">
+  <ul class="list">
+    <li class="list-item">Garripoter<button class="like-button js-like-button">Yoqdi</button></li>
+    <li class="list-item">Gamlet<button class="like-button js-like-button">Yoqdi</button></li>
+    <li class="list-item">Romeo va Julyeta<button class="like-button js-like-button">Yoqdi</button></li>
+    <li class="list-item">Uyda yolg'iz<button class="like-button js-like-button">Yoqdi</button></li>
+    <!-- Keyin qo'shiladigan element -->
+    <li class="list-item">Qashqirlar makoni<button class="like-button js-like-button">Yoqdi</button></li>
+  </ul>
+</div>
+
   <script src="js/main.js"></script>
 </body>
 </html>
