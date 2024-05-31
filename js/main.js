@@ -310,3 +310,14 @@ if (elMovieslist) {//Elementni sug'urtalayapmiz
     }
   })
 } */
+
+
+
+/* // Matnni nusxalash - navigator.clipboard.writeText()
+const elJscopybutton = document.querySelector(".js-copy-button");//button klasini topib olayapmiz
+
+if (elJscopybutton) {//Uni sug'urtalab qo'yayapmiz
+  elJscopybutton.addEventListener('click', function() {//Buttonimiz click hodisasiga quloq solayapdi va funksiya kiritilayapdi
+    navigator.clipboard.writeText("Birnima")//Button bosilganda bir nima degan matinni buferga kopiya qilayapdi. Birnima matnini o'rniga qanday element kerak bo'ls auni yoki valuesini yoki boshqa ma'lumotini kiritish mumkun
+  })
+} */
