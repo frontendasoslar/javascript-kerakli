@@ -321,3 +321,38 @@ if (elJscopybutton) {//Uni sug'urtalab qo'yayapmiz
     navigator.clipboard.writeText("Birnima")//Button bosilganda bir nima degan matinni buferga kopiya qilayapdi. Birnima matnini o'rniga qanday element kerak bo'ls auni yoki valuesini yoki boshqa ma'lumotini kiritish mumkun
   })
 } */
+
+
+
+/* // DOM TRAVERSING, oldingi, yoki keyingi ajdod va avlod elementlar bilan ishlash
+
+Biz bazi vaziyatlarda biror bir elementni avlodi yoki ajdodi yoki elementdan keyingi va oldingi elementlar bilan ishlashimizga to'g'ri keladi. Bunday hollarda quyidagi amallardan foydalanishimiz mumkun
+Birorbir elementdan keyingi element bilan ishlamoqchi bo'lsak:
+Element.nextElementSibling
+
+Keyingi elementning matni uchun
+Element.nextElementSibling.tetContent
+
+Elementdan keyingi ikkinchi element kerak bo'lsa
+Element.nextElementSibling.nextElementSibling
+
+Uchinchi element kerak bo'lsa
+Element.nextElementSibling.nextElementSibling.nextElementSibling
+
+
+Agar elementdan oldingi element kerak bo'lsa Quyidagicha amal bajaramiz
+Element.previousElamantSibling
+
+
+Agar elementning ajdodi bilan ishlamoqchi bo'lsak Quyidagicha amal bajaramiz
+Element.parentElement
+
+Ikkinchi ajdodi bilan ishlamoqchi bo'lsak
+Element.parentElement.parentElement
+
+Agar biz container ajdod elementga chiqmoqchi bo'lsak bir necha marta parentElamant tegini ishlatishimizga to'g'ri kelayapdi buni osonlashtirishimiz uchun quyidagi amaldan foydalanamiz
+Elamant.closest(.ota element klasi)
+
+
+Agar elementning ivhidagi biror avlodni tanlamoqchi bo'sak quyidagi amaldan foydalanamiz
+Elemend.querySelector(.avlod elementning klasi) */
