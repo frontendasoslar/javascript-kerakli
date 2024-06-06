@@ -356,3 +356,32 @@ Elamant.closest(.ota element klasi)
 
 Agar elementning ivhidagi biror avlodni tanlamoqchi bo'sak quyidagi amaldan foydalanamiz
 Elemend.querySelector(.avlod elementning klasi) */
+
+
+// localStorage, Malumotlarni eslab qolish, saqlash
+// localStorage ma'lumotlarni saqlash uchun ishlatiladi. Browserda consolda localstrogeda ma'lumotlarni saqlap aplication bo'limida localstrogeda saqlangan ma'lumotlarni ko'rish mumkun
+Masalan:
+localStorage.setItem('Ism', 'Faxriddin')//Ism qiymatini Faxriddinga tenglashtirayapmiz
+localStorage.getItem('Ism')//tenglashtirilgan qiymatni eslab qolayapdi va consolga chiqaradi
+localStorage.removeItem('Ism')//Tenglashtirilgan qiymatni 'ochirib tashlayapdi
+localStorage.clear()//Ma'lumotlarni tozalab tashlayapdi
+
+// Ismni eslab qolish
+const elNameForm = document.querySelector('.js-name-form');//formaning klasi topib olinayapdi
+const elNameInput = document.querySelector('.js-name-input')//inputning klasi topib olinayapdi
+
+const elname = document.querySelector('.name-label')//
+
+if (elNameForm) {//Agar elNameForm bor bo'lsa
+ elNameForm.addEventListener('submit', function (evt) {//elNameForm submit hodisatiga quloqsolayapdi va argumenti event bo'lgan funksiya kiritilayapdi
+  evt.preventDefault();//forma submit bo'lganda hodisa to'tatilayapdi
+
+  localStorage.setItem('name', elNameInput.value)//inputga kiritilgan ma'lumotni local xotiraga saqlayapdi
+ })
+}
+
+if (localStorage.getItem('name')) {//agar name biror qiymatga tenglashtirilgan bo'lsa
+  elname.textContent = localStorage.getItem('name');//elname ning text kottenti locastrogeda nemening tenglashtirilgan qiymatiga teng bo'ladi
+  elname.classList.add('name-label--shown')//uning claslariga name-label--shown clasini qo'shib qo'yadi
+  elNameForm.style.display = 'none';//formani berkitib qo'yayapdi
+}

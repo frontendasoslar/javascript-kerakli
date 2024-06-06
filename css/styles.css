@@ -135,6 +135,15 @@ select:-webkit-autofill:focus {
 }
 
 
+/* LOCALSTROCE */
+.name-label {
+  display: none;
+}
+
+.name-label--shown {
+  display: block;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
